@@ -1,6 +1,6 @@
 # 🖌️ DvipGFX
 
-**DvipGFX** is a lightweight drawing program written in C++ using a custom graphics library called `vipgfx`. It allows you to draw freely with the mouse, switch colors using hotkeys, and undo your last stroke. This project is great for learning about software rendering, basic event handling, and 2D graphics.
+**DvipGFX** is a lightweight drawing program written in C++ using the **VipGFX library** by [key-real on SourceForge](https://sourceforge.net/projects/vipgfx/). It allows you to draw freely with the mouse, switch colors using hotkeys, and undo your last stroke. This project is great for learning about software rendering, basic event handling, and 2D graphics.
 
 ---
 
@@ -55,11 +55,25 @@ Lines are drawn using a simple version of the **Bresenham line algorithm**, rend
 ## 🛠️ Dependencies
 
 - C++11 or newer
-- [`vipgfx`](#) – a custom software rendering graphics library (not included)
+- [`vipgfx`](https://sourceforge.net/projects/vipgfx/) Library
 
 ---
 
-## 🧪 Compilation (Example using `g++`)
+## 🧪 Installation
 
 ```bash
-g++ -std=c++11 -o SimplePaint main.cpp -lvipgfx
+# Download
+git clone https://github.com/Addiv420/DvipGFX.git
+cd DvipGFX/src
+
+# Starting Pong
+export LD_LIBRARY_PATH=:.
+./DvipGFX
+
+# Build Pong
+src/compiler.sh
+```
+
+---
+
+If you have any questions or would like to contribute to this project, feel free to open an issue on GitHub!
